@@ -1,0 +1,684 @@
+body
+{
+    background-image: url("background.jpg");
+    background-size: 150% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Table
+{
+    position: relative;
+    display: flex;
+    border: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    width: 70%;
+    height: 75px;
+    text-align: center;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 50px;
+    background-color: #212121;
+    transition: 0.1s;
+}
+.Item
+{
+    position: relative;
+    flex: none;
+    font-size: 30px;
+    color:#212121;
+    text-shadow: 1px 0 1px #fff, 
+    0 1px 1px #fff, 
+    -1px 0 1px #fff, 
+    0 -1px 1px #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    outline: 1px;
+    height: 75px;
+    width: 250px;
+    outline-style: solid;
+    outline-color: white;
+    vertical-align: middle;
+    line-height: 75px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 1px;
+    transition: left 10s cubic-bezier(.10, .10, 0, 1) 0s, font-size, 
+                line-height 1s linear 0s;
+    background: rgb(134,134,134);
+    background: linear-gradient(180deg, rgba(134,134,134,1) 0%, rgba(33,33,33,1) 10%, rgba(33,33,33,1) 88%, rgba(173,171,171,1) 100%);
+}
+.Item:hover
+{
+    position: relative;
+    flex: none;
+    outline: 1px;
+    outline-style: solid;
+    outline-color: white;
+    vertical-align: middle;
+    line-break: auto;
+    line-height: normal;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+    left: 1px;
+    transition: 1s;
+    transition-timing-function: cubic-bezier(.10, .10, 0, 1);
+}
+.Item:hover #ItemText
+{
+    position: relative;
+    width: 85%;
+    color: white;
+    margin: auto auto;
+    text-shadow: 1px 0 1px black, 
+    0 1px 1px black, 
+    -1px 0 1px black, 
+    0 -1px 1px black;
+    font-size: 85%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: 1s;
+    transition-timing-function: cubic-bezier(.10, .10, 0, 1);
+}
+#Table #RedLine
+{
+    position: absolute;
+    background-color: red;
+    width: 3px;
+    left: 50%;
+    height: 100px;
+    align-self: center;
+    z-index: 1;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    pointer-events: none;
+}
+#Button
+{
+    display: block;
+    font-size: 25px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 25px;
+    background: #212121;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    height: 50px;
+    transition: 0.5s;
+    width: 35%;
+    transition-timing-function: ease-in-out;
+}
+#Button:hover
+{
+    display: block;
+    font-size: 26px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 25px;
+    background: #212121;
+    color: white;
+    border: 1px;
+    border-radius: 15px;
+    border-color: red;
+    border-style: ridge;
+    height: 50px;
+    transition: 0.5s;
+    width: 40%;
+    transition-timing-function: ease-in-out;
+}
+#Buttons
+{
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+    
+}
+#ButtonSpin
+{
+    font-size: 25px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 25px;
+    background: #212121;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    height: 50px;
+    width: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#ButtonSpin:hover
+{
+    font-size: 26px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 25px;
+    background: #212121;
+    color: white;
+    border: 1px;
+    border-radius: 15px;
+    border-color: red;
+    border-style: solid;
+    height: 50px;
+    width: 27%;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#ButtonReset
+{
+    font-size: 25px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 25px;
+    background: #212121;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    height: 50px;
+    width: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#ButtonReset:hover
+{
+    font-size: 26px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 25px;
+    background: #212121;
+    color: white;
+    border: 1px;
+    border-radius: 15px;
+    border-color: red;
+    border-style: solid;
+    height: 50px;
+    width: 27%;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.TextContainer
+{
+    display: flex;
+    position: relative;
+    width: 70%;
+    height: calc(100vh - 7*50px);
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.SaveButtonsContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+.SaveButtonsItem
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 75%;
+    height: calc(10% - 5px);
+    margin: 0 auto;
+}
+#TextWithGames
+{
+    display: block;
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    width: 74%;
+    height: 100%;
+    overflow-y: hidden;
+    background-color: #212121;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    transition: 0.5s;
+}
+#TextWithGames:hover
+{
+    display: block;
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    width: 74%;
+    height: 100%;
+    overflow-y: hidden;
+    background-color: #212121;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    border-color: red;
+    border-style: solid;
+    transition: 0.5s;
+}
+.SaveLoadButton
+{
+    font-size: 25px;
+    position: relative;
+    margin: 0 auto;
+    background: #212121;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    height: 100%;
+    width: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+.SaveLoadButton:hover
+{
+    font-size: 25px;
+    position: relative;
+    margin: 0 auto;
+    background: #212121;
+    color: white;
+    border: 1px;
+    border-radius: 12px;
+    border-color: red;
+    border-style: solid;
+    height: 100%;
+    width: 26%;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+#StartPageButton
+{
+    font-size: 25px;
+    position: absolute;
+    background: #212121;
+    top: 10px;
+    left: 10px;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#StartPageButton:hover
+{
+    font-size: 25px;
+    position: absolute;
+    background: #212121;
+    top: 10px;
+    left: 10px;
+    color: white;
+    border: 2px;
+    border-radius: 100%;
+    border-color: red;
+    border-style: solid;
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#InfoButton
+{
+    font-size: 25px;
+    position: absolute;
+    background: #212121;
+    top: 70px;
+    left: 10px;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#InfoButton:hover
+{
+    font-size: 25px;
+    position: absolute;
+    background: #212121;
+    top: 70px;
+    left: 10px;
+    color: white;
+    border: 2px;
+    border-radius: 100%;
+    border-color: red;
+    border-style: solid;
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+@media screen and (max-width: 800px)
+{
+    body
+    {
+        background-image: url("background.jpg");
+        background-size: 150% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #Table
+    {
+        position: relative;
+        display: flex;
+        border: 3px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: white;
+        width: 70%;
+        height: 100px;
+        text-align: center;
+        margin: 0 auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin-top: 20px;
+        background-color: #212121;
+        transition: 0.1s;
+    }
+    .Item
+    {
+        position: relative;
+        flex: none;
+        font-size: 30px;
+        color:#212121;
+        text-shadow: 1px 0 1px #fff, 
+        0 1px 1px #fff, 
+        -1px 0 1px #fff, 
+        0 -1px 1px #fff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        outline: 1px;
+        height: 100px;
+        width: 250px;
+        outline-style: solid;
+        outline-color: white;
+        vertical-align: middle;
+        line-height: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+        left: 1px;
+        transition: 10s;
+        transition-timing-function: cubic-bezier(.10, .10, 0, 1);
+        background: rgb(134,134,134);
+        background: linear-gradient(180deg, rgba(134,134,134,1) 0%, rgba(33,33,33,1) 10%, rgba(33,33,33,1) 88%, rgba(173,171,171,1) 100%);
+    }
+    .Item:hover
+    {
+        position: relative;
+        flex: none;
+        font-size: 25px;
+        outline: 1px;
+        height: 100px;
+        width: 250px;
+        text-shadow: 1px 0 1px #ff6b6b, 
+        0 1px 1px #ff6b6b, 
+        -1px 0 1px #ff6b6b, 
+        0 -1px 1px #ff6b6b;
+        outline-style: solid;
+        outline-color: white;
+        vertical-align: middle;
+        word-break: break-all;
+        line-height: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        left: 1px;
+        transition: 1s;
+        transition-timing-function: cubic-bezier(.10, .10, 0, 1);
+    }
+    #Table #RedLine
+    {
+        position: absolute;
+        background-color: red;
+        width: 3px;
+        left: 50%;
+        height: 100px;
+        border: 2px;
+        border-color: white;
+        border-style: solid;
+        align-self: center;
+        z-index: 1;
+        pointer-events: none;
+    }
+    #Button
+    {
+        display: block;
+        font-size: 25px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        background: #212121;
+        color: white;
+        border: 1px;
+        border-radius: 10px;
+        border-color: white;
+        border-style: solid;
+        height: 50px;
+        transition: 0.5s;
+        width: 60%;
+        height: 60px;
+        transition-timing-function: ease-in-out;
+    }
+    #Button:hover
+    {
+        display: block;
+        font-size: 25px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        background: #212121;
+        color: white;
+        border: 1px;
+        border-radius: 10px;
+        border-color: red;
+        border-style: solid;
+        height: 50px;
+        transition: 0.5s;
+        width: 60%;
+        height: 60px;
+        transition-timing-function: ease-in-out;
+    }
+    #Buttons
+    {
+        font-size: 25px;
+        position: relative;
+        text-align: center;
+        
+    }
+    #ButtonSpin
+    {
+        font-size: 25px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        background: #212121;
+        color: white;
+        border: 1px;
+        border-radius: 10px;
+        border-color: white;
+        border-style: solid;
+        height: 80px;
+        width: 35%;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    #ButtonSpin:hover
+    {
+        font-size: 26px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10px;
+        background: #212121;
+        color: white;
+        border: 1px;
+        border-radius: 15px;
+        border-color: red;
+        border-style: solid;
+        height: 80px;
+        width: 37%;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    #ButtonReset
+    {
+        font-size: 25px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        background: #212121;
+        color: white;
+        border: 1px;
+        border-radius: 10px;
+        border-color: white;
+        border-style: solid;
+        height: 80px;
+        width: 35%;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    #ButtonReset:hover
+    {
+        font-size: 26px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10px;
+        background: #212121;
+        color: white;
+        border: 1px;
+        border-radius: 15px;
+        border-color: red;
+        border-style: solid;
+        height: 80px;
+        width: 37%;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    .TextContainer
+    {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        min-height: 200px;
+        height: calc(100vh - 9*50px);
+        width: 70%;
+    }
+    #TextWithGames
+    {
+        display: block;
+        font-size: 15px;
+        position: relative;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        overflow-y: hidden;
+        background-color: #212121;
+        color: white;
+        border: 1px;
+        border-radius: 10px;
+        border-color: white;
+        border-style: solid;
+    }
+    #TextWithGames:hover
+    {
+        display: block;
+        font-size: 15px;
+        position: relative;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        overflow-y: hidden;
+        background-color: #212121;
+        color: white;
+        border: 1px;
+        border-radius: 10px;
+        border-color: red;
+        border-style: solid;
+    }
+    #StartPageButton
+    {
+        display: block;
+        font-size: 25px;
+        position: initial;
+        margin: 0 auto;
+        margin-top: 10px;
+        background: #212121;
+        color: white;
+        border: 1px;
+        border-radius: 10px;
+        border-color: white;
+        border-style: solid;
+        height: 50px;
+        transition: 0.5s;
+        width: 60%;
+        height: 60px;
+        transition-timing-function: ease-in-out;
+    }
+    #StartPageButton:hover
+    {
+        display: block;
+        font-size: 25px;
+        position: initial;
+        margin: 0 auto;
+        margin-top: 10px;
+        background: #212121;
+        color: white;
+        border: 1px;
+        border-radius: 10px;
+        border-color: red;
+        border-style: solid;
+        height: 50px;
+        transition: 0.5s;
+        width: 60%;
+        height: 60px;
+        transition-timing-function: ease-in-out;
+    }
+    .SaveButtonsContainer
+    {
+        display: none;
+    }
+    #InfoButton
+    {
+        display: none;
+    }
+}

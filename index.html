@@ -1,0 +1,79 @@
+<head>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="index.css">
+    <audio src="onclick.mp3" id="OnClick1"></audio>
+    <audio src="ongoing.mp3" id="OnClick2"></audio>
+    <audio src="oninput.mp3" id="OnClick3"></audio>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS:GO Random Roulette</title>
+    <link rel="icon" href="icon.png">
+</head>
+<body onload="OnLoadPage()">
+    <div id="Table">
+        <div id="RedLine"></div>
+    </div>
+    <div id="Buttons">
+        <input type="button" id="ButtonSpin" value="Spin" onclick="SpinButton(); OnButtonClick1();">
+        <input type="button" id="ButtonReset" value="Reset" onclick="ResetButton(); OnButtonClick1()">
+    </div>
+    <div class="TextContainer">
+        <div class="SaveButtonsContainer">
+            <div class="SaveButtonsItem">
+                <input type="button" class="SaveLoadButton" id="ButtonLoaded1" value="1" onclick="ResetButtonToIndex(1); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="S" onclick="SaveButtonToIndex(1); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="L" onclick="LoadButtonToIndex(1); OnButtonClick1();">
+            </div>
+            <div class="SaveButtonsItem">
+                <input type="button" class="SaveLoadButton" id="ButtonLoaded2" value="2" onclick="ResetButtonToIndex(2); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="S" onclick="SaveButtonToIndex(2); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="L" onclick="LoadButtonToIndex(2); OnButtonClick1();">
+            </div>
+            <div class="SaveButtonsItem">
+                <input type="button" class="SaveLoadButton" id="ButtonLoaded3" value="3" onclick="ResetButtonToIndex(3); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="S" onclick="SaveButtonToIndex(3); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="L" onclick="LoadButtonToIndex(3); OnButtonClick1();">
+            </div>
+            <div class="SaveButtonsItem">
+                <input type="button" class="SaveLoadButton" id="ButtonLoaded4" value="4" onclick="ResetButtonToIndex(4); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="S" onclick="SaveButtonToIndex(4); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="L" onclick="LoadButtonToIndex(4); OnButtonClick1();">
+            </div>
+            <div class="SaveButtonsItem">
+                <input type="button" class="SaveLoadButton" id="ButtonLoaded5" value="5" onclick="ResetButtonToIndex(5); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="S" onclick="SaveButtonToIndex(5); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="L" onclick="LoadButtonToIndex(5); OnButtonClick1();">
+            </div>
+            <div class="SaveButtonsItem">
+                <input type="button" class="SaveLoadButton" id="ButtonLoaded6" value="6" onclick="ResetButtonToIndex(6); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="S" onclick="SaveButtonToIndex(6); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="L" onclick="LoadButtonToIndex(6); OnButtonClick1();">
+            </div>
+            <div class="SaveButtonsItem">
+                <input type="button" class="SaveLoadButton" id="ButtonLoaded7" value="7" onclick="ResetButtonToIndex(7); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="S" onclick="SaveButtonToIndex(7); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="L" onclick="LoadButtonToIndex(7); OnButtonClick1();">
+            </div>
+            <div class="SaveButtonsItem">
+                <input type="button" class="SaveLoadButton" id="ButtonLoaded8" value="8" onclick="ResetButtonToIndex(8); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="S" onclick="SaveButtonToIndex(8); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="L" onclick="LoadButtonToIndex(8); OnButtonClick1();">
+            </div>
+            <div class="SaveButtonsItem">
+                <input type="button" class="SaveLoadButton" id="ButtonLoaded9" value="9" onclick="ResetButtonToIndex(9); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="S" onclick="SaveButtonToIndex(9); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="L" onclick="LoadButtonToIndex(9); OnButtonClick1();">
+            </div>
+            <div class="SaveButtonsItem">
+                <input type="button" class="SaveLoadButton" id="ButtonLoaded10" value="10" onclick="ResetButtonToIndex(10); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="S" onclick="SaveButtonToIndex(10); OnButtonClick1();">
+                <input type="button" class="SaveLoadButton" value="L" onclick="LoadButtonToIndex(10); OnButtonClick1();">
+            </div>
+        </div>
+        <textarea id="TextWithGames" spellcheck="false" oninput="OnButtonClick3()" onmouseenter="this.style.overflowY = 'auto';" onmouseleave="this.style.overflowY = 'hidden';" style="resize: none"></textarea>
+    </div>
+    <input type="button" id="Button" value="Add Elements" onclick="AddElementToCase(); OnButtonClick1()">
+    <input type="button" id="StartPageButton" value="<-" onclick="window.location.href='https://standarter.github.io/'">
+    <input type="button" id="InfoButton" value="I" onclick="InfoButton()">
+    <script src="index.js"></script>
+</body>
